@@ -88,7 +88,7 @@
     font-variant-numeric: tabular-nums; }
 
   .tablewrap { overflow-x: auto; margin-top: 4px; }
-  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
   thead th { position: sticky; top: 0; text-align: left; font-size: 11px; letter-spacing: .08em;
     text-transform: uppercase; color: var(--ink-3); font-weight: 600; padding: 12px 12px;
     border-bottom: 1px solid var(--line); background: var(--bg); white-space: nowrap; }
@@ -98,10 +98,17 @@
   thead th[data-dir] .arr { opacity: 1; color: var(--accent-ink); }
   tbody td { padding: 13px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
   tbody tr:hover { background: var(--surface-2); }
-  .acr { font-weight: 700; font-size: 14px; letter-spacing: -.01em; white-space: nowrap; }
+  .acr { font-weight: 700; font-size: 15px; letter-spacing: -.01em; white-space: nowrap; }
   .acr .track { display: block; font-weight: 500; font-size: 11px; color: var(--ink-3); letter-spacing: 0; }
-  .desc { color: var(--ink-2); max-width: 46ch; }
-  .dl { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .desc { color: var(--ink-2); font-size: 15.5px; line-height: 1.5; }
+  /* let Description absorb the slack; keep the trailing columns compact */
+  thead th:nth-child(2), tbody td:nth-child(2) { width: 100%; }
+  thead th:nth-child(1), tbody td:nth-child(1) { white-space: nowrap; }
+  thead th:nth-child(3), tbody td:nth-child(3),
+  thead th:nth-child(4), tbody td:nth-child(4),
+  thead th:nth-child(5), tbody td:nth-child(5) { white-space: nowrap; padding-left: 10px; padding-right: 10px; }
+  .dl { font-family: var(--mono); font-size: 13.5px; font-variant-numeric: tabular-nums;
+    display: block; max-width: 15ch; line-height: 1.35; white-space: normal; }
   .dl small { display: block; white-space: normal; color: var(--ink-3); font-size: 11px; margin-top: 2px; max-width: 22ch; }
   .badge { display: inline-flex; align-items: center; gap: 6px; padding: 3px 9px; border-radius: 999px;
     font-size: 12px; font-weight: 600; white-space: nowrap; }
