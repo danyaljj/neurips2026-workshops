@@ -127,6 +127,9 @@
   .legend { display: flex; flex-wrap: wrap; gap: 14px; margin: 14px 0 0; font-size: 12.5px; color: var(--ink-2); }
   .legend span { display: inline-flex; align-items: center; gap: 6px; }
   .empty { text-align: center; color: var(--ink-3); padding: 40px; font-style: italic; }
+  .updated { margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--ink-3);
+    letter-spacing: .02em; }
+  .updated time { color: var(--ink-2); font-weight: 600; }
   @media (max-width: 620px) { .desc { max-width: none; } .wrap { padding: 28px 16px 60px; } }
 </style>
 
@@ -190,6 +193,7 @@
       <li><strong>Simbiochem</strong> — accepted as a EurIPS workshop; CFP closed, site was unreachable.</li>
       <li>All <strong>locations</strong> are confirmed from OpenReview <code>content.location</code>; none needed "Unconfirmed." GenAI4Health & NeurReps each appear as 3 submission tracks of one workshop; QueerInAI & WiML run at all three venues.</li>
     </ol>
+    <p class="updated">Last updated <time datetime="2026-07-24">24 July 2026</time> · data from the OpenReview REST API and workshop websites</p>
   </div>
 </div>
 
