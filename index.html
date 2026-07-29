@@ -99,7 +99,7 @@
   tbody td { padding: 13px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
   tbody tr:hover { background: var(--surface-2); }
   .acr { font-weight: 700; font-size: 15px; letter-spacing: -.01em; white-space: nowrap; }
-  .acr .track { display: block; font-weight: 500; font-size: 11px; color: var(--ink-3); letter-spacing: 0; }
+  .acr + .track { display: block; margin-top: 2px; font-weight: 500; font-size: 11px; color: var(--ink-3); letter-spacing: 0; }
   .desc { color: var(--ink-2); font-size: 15.5px; line-height: 1.5; }
   /* let Description absorb the slack; keep the trailing columns compact */
   thead th:nth-child(2), tbody td:nth-child(2) { width: 100%; }
@@ -193,14 +193,14 @@
     <ol>
       <li><strong>AI4Mat, EIML, MLForSys</strong> — live sites still show a prior/different edition (ICLR 2026 / ICML 2026 / NeurIPS 2025). MLForSys still has an OpenReview deadline (Aug 28); the other two have no NeurIPS-2026 CFP posted yet.</li>
       <li><strong>ASCI, InfPriv, MLxOR, ReMuCAI, WiML, NewInML, EvoRobust, AI4GOOD</strong> — no discoverable submission deadline (empty/JS-only/403/404 sites, TBD, or no CFP page found).</li>
-      <li><strong>GenAI4Health</strong> (3 tracks) & <strong>ATTRIB</strong> — sites still serve last year's edition; 2026 deadlines not posted.</li>
+      <li><strong>ATTRIB</strong> — site still serves last year's edition; 2026 deadline not posted.</li>
       <li><strong>MATH-AI</strong> & <strong>VERICODEGEN</strong> — the site and OpenReview disagree on the deadline; both shown, verify with organizers.</li>
       <li><strong>MPLR-FM (PLOM)</strong> — site says "15 Sept 2025," almost certainly a typo for 2026.</li>
       <li><strong>SocialAgent</strong> — site shows "April 1, 2026," which predates the proposal cycle and is likely a stale prior-year date.</li>
       <li><strong>Simbiochem</strong> — accepted as a EurIPS workshop; CFP closed, site was unreachable.</li>
       <li>All <strong>locations</strong> are confirmed from OpenReview <code>content.location</code>; none needed "Unconfirmed." GenAI4Health & NeurReps each appear as 3 submission tracks of one workshop; QueerInAI & WiML run at all three venues.</li>
     </ol>
-    <p class="updated">Last updated <time datetime="2026-07-24">24 July 2026</time> · data from the OpenReview REST API and workshop websites</p>
+    <p class="updated">Last updated <time datetime="2026-07-28">28 July 2026</time> · data from the OpenReview REST API and workshop websites</p>
   </div>
 </div>
 
@@ -228,9 +228,9 @@ const DATA = [
  ["FAST","","Theory of system-level behavior and risk in populations of LLM agents","Aug 29","2026-08-29","site","Paris","https://fast-workshop.github.io"],
  ["FLMSec","","Foundations of LLM security — from reactive attack/defense toward secure-by-design","Aug 22","2026-08-22","site","Paris","https://flmsec.github.io/"],
  ["GDDL","","Jointly modeling geometry and distribution of data; optimal transport meets structured data","Aug 29","2026-08-29","site","Paris","https://gddl-neurips-2026.github.io"],
- ["GenAI4Health","main track","Generative AI in healthcare — potential, trustworthiness, regulatory compliance","Not posted","9999-12-31","tbd","Sydney","https://genai4health.github.io/"],
- ["GenAI4Health","Demonstration track","Demonstration-paper track of the GenAI-for-Health workshop","Not posted","9999-12-31","tbd","Sydney","https://genai4health.github.io/"],
- ["GenAI4Health","Position track","Position-paper track of the GenAI-for-Health workshop","Not posted","9999-12-31","tbd","Sydney","https://genai4health.github.io/"],
+ ["GenAI4Health","Main track","Generative AI in healthcare — potential, trustworthiness, regulatory compliance","Sep 5","2026-09-05","site","Sydney","https://genai4health.github.io/2026-NeurIPS/"],
+ ["GenAI4Health","Demonstration track","Demonstration-paper track of the GenAI-for-Health workshop","Sep 5","2026-09-05","site","Sydney","https://genai4health.github.io/2026-NeurIPS/"],
+ ["GenAI4Health","Position track","Position-paper track of the GenAI-for-Health workshop","Sep 5","2026-09-05","site","Sydney","https://genai4health.github.io/2026-NeurIPS/"],
  ["IAB","","Interpreting agent behavior across agents, humans and their interaction","Aug 29 + Oct 1 (reviews track)","2026-08-29","site","Sydney","https://iab-agents.github.io/"],
  ["IAEval","","Rigorous, scalable, scientific methods for evaluating interactive agents","Aug 29","2026-08-29","site","Atlanta","https://eval-interactive-agents-workshop.github.io/"],
  ["ICBINB-BIO","","Why strong-benchmark AI models fail on new biology — failure modes and robustness","Aug 29 (tentative)","2026-08-29","site","Sydney","https://icbinb-bio.github.io/"],
